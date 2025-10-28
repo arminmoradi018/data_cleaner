@@ -1,0 +1,7 @@
+shiny==1.5.0
+matplotlib==3.9.2
+numpy==2.0.2
+pandas==2.2.3
+pytest==8.3.5
+seaborn==0.13.2
+scikit-learn==1.5.2
