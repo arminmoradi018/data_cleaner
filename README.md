@@ -139,7 +139,9 @@ This project is licensed under the **MIT License** — see the [LICENSE](./LICEN
 
 ---
 
-👤 **Author:**  
-Armin Moradi  
-🎓 AI Student @ JKU Linz  
-📧 Arminmoradi018@gmail.com
+## 👤 Author  
+**Armin Moradi**  
+🎓 AI student (3rd semester) at JKU Linz  
+📘 This project was originally a smaller assignment from one of my second-semester courses in the Artificial Intelligence program, which I later expanded and enhanced on my own.  
+📫 Arminmoradi018@gmail.com
+
