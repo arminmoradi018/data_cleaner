@@ -29,10 +29,16 @@ Easily handle missing data, normalize or standardize features, drop unnecessary 
 | CI/CD            | GitHub Actions                                 |
 
 ---
+## 🌐 Data Source
+
+You can use this dataset to test the app:
+[🐧 Download penguins.csv](https://raw.githubusercontent.com/allisonhorst/palmerpenguins/main/inst/extdata/penguins.csv)
+
+---
 
 ## 🧩 Project Structure
 
-```
+```bash
 data_cleaner/
 ├── src/
 │   ├── __init__.py
@@ -79,57 +85,37 @@ This project includes **unit tests** (Pytest) verifying core data-processing log
 1. ✅ **File Upload** — Ensures CSV files load correctly.  
 2. 🧹 **Data Cleaning** — Tests column removal, missing-value handling, normalization, and standardization.  
 3. 📊 **Data Analysis** — Validates statistical summaries and metadata output.  
-4. 🔍 **PCA Reduction** — Confirms dimensionality-reduction works properly.  
+4. 🔍 **PCA & t-SNE** — Ensure proper dimensionality reduction and visualization of high-dimensional features.  
+
+To run all tests locally:
+
+### 🧰 Running Tests Locally
 
 To run all tests locally:
 
 ```bash
 pytest -v
 
-
+```
 ---
 
 ## 🤖 Continuous Integration (CI)
 
-Every push or pull request automatically triggers tests using **GitHub Actions**.  
-This ensures reliability and stability across all commits.
+This project uses **GitHub Actions** for continuous integration.  
+Every time you **push** a commit or open a **pull request**, all automated tests are executed in a clean environment to ensure code quality and stability.
 
 ---
 
 ### 🧱 CI Workflow Overview
 
-The workflow file (`.github/workflows/ci.yml`) runs the following steps:
+The CI workflow is defined in the following file: .github/workflows/ci.yml
 
-1. Checkout repository  
-2. Set up Python 3.11  
-3. Install dependencies (`requirements.txt`)  
-4. Run Pytest  
+It performs the following steps:
 
-Example:
-
-```yaml
-name: Run Pytest
-
-on:
-  push:
-  pull_request:
-
-jobs:
-  test:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-          pip install pytest
-      - name: Run tests
-        run: pytest -v
-```
+1. Checkout the repository – downloads the latest version of the code.
+2. Set up Python – installs Python 3.11.
+3. Install dependencies – installs required packages from requirements.txt.
+4. Run tests – executes all Pytest tests located in the test/ directory. 
 
 ---
 
