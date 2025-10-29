@@ -106,14 +106,15 @@ Every time you **push** a commit or open a **pull request**, all automated tests
 
 ### 🧱 CI Workflow Overview
 
-The CI workflow is defined in the following file: .github/workflows/ci.yml
+The CI workflow is defined in the following file:
+.github/workflows/ci.yml
 
 It performs the following steps:
 
-1. Checkout the repository – downloads the latest version of the code.
-2. Set up Python – installs Python 3.11.
-3. Install dependencies – installs required packages from requirements.txt.
-4. Run tests – executes all Pytest tests located in the test/ directory. 
+1. **Checkout the repository** – downloads the latest version of the code.
+2. **Set up Python** – installs Python 3.11.
+3. **Install dependencies** – installs required packages from `requirements.txt`.
+4. **Run tests** – executes all Pytest tests located in the `test/` directory.
 
 ---
 
