@@ -87,8 +87,6 @@ This project includes **unit tests** (Pytest) verifying core data-processing log
 3. 📊 **Data Analysis** — Validates statistical summaries and metadata output.  
 4. 🔍 **PCA & t-SNE** — Ensure proper dimensionality reduction and visualization of high-dimensional features.  
 
-To run all tests locally:
-
 ### 🧰 Running Tests Locally
 
 To run all tests locally:
